@@ -85,9 +85,9 @@ class GraphConvolution(nn.Module):
         else:
             return outputs
 
-class GCN(nn.Module):
+class CFGCN(nn.Module):
     def __init__(self, seq_len,num_nodes,hidden_size,out_size,num_class):
-        super(GCN, self).__init__()
+        super(CFGCN, self).__init__()
         self.hidden = hidden_size
         self.out_size = out_size
         self._num_nodes = num_nodes
@@ -113,7 +113,7 @@ class GCN(nn.Module):
         return out
         # return F.log_softmax(X, dim = 1)
 
-model  =GCN(1500,16,324,64,num_class)
+model  = CFGCN(1500,16,324,64,num_class)
 
 criterion = nn.CrossEntropyLoss(reduction='none')
 optimizer = optim.Adam(model.parameters(),lr = learning_rate, weight_decay = weight_decay)
