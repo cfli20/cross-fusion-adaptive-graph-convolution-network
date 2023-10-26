@@ -14,8 +14,6 @@ import torch.nn.functional as F
 from sklearn.model_selection import KFold
 import torch.nn as nn
 import torch.optim as optim
-from utils import *
-from metrics import *
 from genera_data import  *
 import matplotlib
 matplotlib.rc("font",family='WenQuanYi Micro Hei')
