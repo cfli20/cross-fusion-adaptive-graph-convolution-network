@@ -3,7 +3,9 @@
 
 You should build a graph for each feature matrix. Each feature matrix has its unique graph.
 The inputs of cross-fusion adaptive graph convolution network are each feature and its graph.
+
 There are the original dataset links at:https://drive.google.com/drive/folders/1mhuUWvQq-mgdpfJa-33YCgQI2LsZ-Kpp
+
 For each experimental group, three files are generated: data.bdf, evt.bdf, and recordInformation.json. 
 Each data.bdf file contains all the EEG signals collected from the beginning to the end of each trial. 
 Each evt.bdf file contains EEG data points and their corresponding markers.
