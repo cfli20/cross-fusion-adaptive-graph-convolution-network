@@ -4,7 +4,8 @@
 You should build a graph for each feature matrix. Each feature matrix has its unique graph.
 The inputs of cross-fusion adaptive graph convolution network are each feature and its graph.
 
-There are the original dataset links at:https://drive.google.com/drive/folders/1z2u0KxniZOIgg0Ps3SB80qt21NtMrPIQ?usp=sharing
+There are the original dataset links at:https://drive.google.com/drive/folders/1z42JhviUJRevvHJ07tD1xbFLakTj04rN?usp=sharing (Silent reading EEG signals of English words) 
+https://drive.google.com/drive/folders/1k3IiZneBqgxEQWguCzhE-2nBxvupDmaj?usp=sharing (Silent reading EEG signals of Chinese words)
 
 For each experimental group, three files are generated: data.bdf, evt.bdf, and recordInformation.json. 
 Each data.bdf file contains all the EEG signals collected from the beginning to the end of each trial. 
