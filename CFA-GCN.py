@@ -109,7 +109,8 @@ class CFGCN(nn.Module):
 
         s = torch.reshape(s1,(-1,64 * 132))
         out = self.fc(s)
-        return F.log_softmax(X, dim = 1)
+        return out
+        # return F.log_softmax(X, dim = 1)
 
 model  = CFGCN(1500,16,324,64,num_class)
 
