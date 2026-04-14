@@ -163,18 +163,18 @@ for i in range(epochs):
             # print('train acc', s1, 'val acc',s2)
 
         print(i,'train acc',t_sum/n_splits,'val acc', v_sum/n_splits )
-        with torch.no_grad():
-            correct = 0
-            total = 0
-            labels = ty
-            outputs = model(tx.data, ta)  # ,tadjs
-            _, predicted = torch.max(outputs, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-            print('test acc----------------------------', correct / total)
-            # pred_y = predicted
-    # cm = confusion_matrix(labels, pred_y )
-    # # print(cm)
-    # plot_confusion_matrix(cm,target_names =labels_name,m=i)
+    with torch.no_grad():
+        correct = 0
+        total = 0
+        labels = ty
+        outputs = model(tx.data, ta)  # ,tadjs
+        _, predicted = torch.max(outputs, 1)
+        total += labels.size(0)
+        correct += (predicted == labels).sum().item()
+        print('test acc----------------------------', correct / total)
+        # pred_y = predicted
+# cm = confusion_matrix(labels, pred_y )
+# # print(cm)
+# plot_confusion_matrix(cm,target_names =labels_name,m=i)
 
 
